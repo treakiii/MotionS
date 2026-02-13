@@ -1,0 +1,22 @@
+{
+    "name": "@motions/dom",
+    "version": "0.0.1",
+    "description": "DOM animation utilities for MotionS",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "@motions/core": "*"
+    },
+    "scripts": {
+        "build": "tsup src/index.ts --format cjs,esm --dts",
+        "dev": "tsup src/index.ts --format cjs,esm --watch --dts"
+    },
+    "devDependencies": {
+        "tsup": "^8.0.0",
+        "typescript": "^5.0.0"
+    }
+}

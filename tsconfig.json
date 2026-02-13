@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "strict": true,
+        "baseUrl": ".",
+        "paths": {
+            "@motions/core": [
+                "packages/core/src"
+            ],
+            "@motions/dom": [
+                "packages/dom/src"
+            ],
+            "@motions/react": [
+                "packages/react/src"
+            ],
+            "@motions/vue": [
+                "packages/vue/src"
+            ]
+        },
+        "skipLibCheck": true,
+        "jsx": "react-jsx",
+        "allowSyntheticDefaultImports": true
+    }
+}

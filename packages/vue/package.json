@@ -1,0 +1,26 @@
+{
+    "name": "@motions/vue",
+    "version": "0.0.1",
+    "description": "Vue components and composables for MotionS",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "peerDependencies": {
+        "vue": ">=3"
+    },
+    "dependencies": {
+        "@motions/dom": "*"
+    },
+    "scripts": {
+        "build": "tsup src/index.ts --format cjs,esm --dts --external vue",
+        "dev": "tsup src/index.ts --format cjs,esm --watch --dts --external vue"
+    },
+    "devDependencies": {
+        "tsup": "^8.0.0",
+        "typescript": "^5.0.0",
+        "vue": "^3.3.0"
+    }
+}
